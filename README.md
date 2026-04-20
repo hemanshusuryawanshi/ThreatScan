@@ -1,6 +1,6 @@
 # ThreatScan
 
-# Malicious URL Detector - Cyber Security Command Center
+##Malicious URL Detector - Cyber Security Command Center
 
 An advanced, machine learning-powered web application designed to detect malicious URLs. Built with Streamlit, Scikit-Learn, and Python, this tool features a high-contrast "Cyber Security" UI aesthetic and provides real-time analysis of web addresses for potential threats like phishing, malware delivery, and suspicious formatting.
 
