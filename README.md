@@ -1,6 +1,6 @@
 # ThreatScan
 
-##Malicious URL Detector - Cyber Security Command Center
+## Malicious URL Detector - Cyber Security Command Center
 
 An advanced, machine learning-powered web application designed to detect malicious URLs. Built with Streamlit, Scikit-Learn, and Python, this tool features a high-contrast "Cyber Security" UI aesthetic and provides real-time analysis of web addresses for potential threats like phishing, malware delivery, and suspicious formatting.
 
@@ -43,31 +43,4 @@ When you input a URL, the system performs the following steps:
 3. **ML Classifier**: Feeds the extracted properties into the pre-trained `malicious_url_model.pkl`.
 4. **Scoring**: Calculates a confidence score. If it exceeds the threshold, the URL is flagged as malicious.
 
-## Deployment Guide (Streamlit Community Cloud)
-
-The easiest way to put this app on the internet is using [Streamlit Community Cloud](https://streamlit.io/cloud).
-
-### Prerequisites
-- A GitHub account.
-- A Streamlit Cloud account (linked to your GitHub).
-
-### Steps to Deploy:
-1. **Upload your code to GitHub:**
-   - Create a new public (or private) repository on GitHub.
-   - Upload all the project files (`app.py`, `feature_extraction.py`, `malicious_url_model.pkl`, `requirements.txt`, etc.) to this repository.
-   - *Note: You can exclude `url_dataset.csv` if it's too large, as the app only needs the `.pkl` model file to run.*
-
-2. **Deploy on Streamlit Cloud:**
-   - Go to [share.streamlit.io](https://share.streamlit.io) and log in.
-   - Click the **"New app"** button.
-   - Select the GitHub repository you just created.
-   - Set the **Main file path** to `app.py`.
-   - Click **"Deploy!"**
-
-Within a few minutes, Streamlit will install the dependencies from your `requirements.txt` and your application will be live on the internet with a public, sharable link!
-
-## Note on Custom Fonts and UI (Windows vs Unix Deployments)
-The UI heavily relies on custom CSS injected into Streamlit. Ensure that your deployment environment supports the HTML/CSS rendering exactly as viewed locally. Streamlit Cloud handles this perfectly out of the box.
-
----
 *Disclaimer: This tool is built for educational (Ethical Hacking / Cyber Security coursework) and informational purposes. No automated system is 100% accurate at detecting malicious domains.*
