@@ -1,4 +1,4 @@
-# ThreatScan
+# CyberGurad
 
 ## Malicious URL Detector - Cyber Security Command Center
 
